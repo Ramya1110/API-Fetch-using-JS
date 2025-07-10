@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  background-color: rgb(32, 31, 31);
+}
+#sidenav {
+  width: 200px;
+  background-color: #ecf0f1;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  overflow-y: auto;
+}
+#sidenav button {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  background-color: #222223;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#sidenav button:hover {
+  background-color: #e67e22;
+}
+#content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  color: #fff;
+}
+#content h3 {
+  margin-bottom: 20px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+.card {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card h3 {
+  margin-top: 0;
+  color: #161616;
+}
+.card p {
+  font-size: 14px;
+  color: #313030;
+}
+.card b {
+  display: block;
+  margin-top: 10px;
+  color: #e67e22;
+}
